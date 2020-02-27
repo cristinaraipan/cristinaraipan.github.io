@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Contigo Airlines</title>
+
+    <title>Contigo-Compras</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:mediumaquamarine">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <h1>Contigo Airlines</h1>
+                <h2>C A</h2>
+                <h1>Vuela con nosotros</h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">Principal<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="compras.html">Vuela con nosotros</a>
@@ -53,63 +54,16 @@
         </nav>
     </header>
     <br><br>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/avion.jpg"
-                    class="d-block w-100" alt="nuestra_flota">
-            </div>
-            <div class="carousel-item">
-                <img src="images/aviones.jpg"
-                    class="d-block w-100" alt="nuestra_flota">
-            </div>
-            <div class="carousel-item">
-                <img src="images/gente.jpg"
-                    class="d-block w-100" alt="nuestra_flota">
-            </div>
-            <div class="carousel-item">
-                <img src="images/Mujeres-pilotos.jpg"
-                    class="d-block w-100" alt="nuestra_flota">
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <hr width="100%">
-    <br><br>
-    <div class="destinos">
-        <div class="card" style="width: 18rem;">
-            <img src="https://www.viajeselcorteingles.es/blog/wp-content/uploads/2018/07/top_caribe_xcaret_mexico-300x300.jpg"
-                class="card-img-top" alt="VAMOS!!!">
-            <div class="card-body">
-                <h5 class="card-title">Caribe Mexico</h5>
-                <p class="card-text">¿Por qué imaginar una playa para relajarte si podrías estar aquí?</p>
-                <a href="compras.html" class="btn btn-primary">Volamos contigo</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://lugaresturisticos.blog/wp-content/uploads/2018/03/lugares-turisticos-peru.jpg" height="300px"
-                class="card-img-top" alt="VAMOS!!!">
-            <div class="card-body">
-                <h5 class="card-title">Machu Pichu Perú</h5>
-                <p class="card-text">¿Por qué imaginar una gran aventura si podrías realizarla aquí?</p>
-                <a href="compras.html" class="btn btn-primary">Volamos contigo</a>
-            </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-            <img src="https://elordenmundial.com/wp-content/uploads/2017/05/Monte-Fuji-1024x660.jpg" width="300px" height="300px"
-                class="card-img-top" alt="VAMOS!!!">
-            <div class="card-body">
-                <h5 class="card-title">Japón</h5>
-                <p class="card-text">Buscas cultura y tecnología? Este es tu destino</p>
-                <a href="compras.html" class="btn btn-primary">Volamos contigo</a>
-            </div>
-        </div>
-
+    <div class="compra">
+        <form>
+            <label for="fecha_ida">Fecha de ida:</label>
+            <input type="datetime" id="fecha_ida" name="fecha_ida">
+            <label for="fecha_vuelta">Fecha de vuelta</label>
+            <input type="datetime" id="fecha_vuelta" name="fecha_vuelta">
+            <a href=""><input type="submit" value="Buscar"></a>
+        </form>
     </div>
 
-    <footer>
-
-    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

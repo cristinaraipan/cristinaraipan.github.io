@@ -1,0 +1,14 @@
+*{
+
+}
+h1{
+    color: gainsboro;
+}
+.destinos{
+    vertical-align: top;
+    display: flex;
+}
+.card{
+    margin-left: 30px;
+    margin-right: 20px;
+}
